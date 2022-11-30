@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Chirp;
+    /* outline: 1px solid red; */
+}
+body{
+    background-color: #000;
+    color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+li{
+    list-style: none;
+}
+h4{
+    color: #5C6064;
+    font-size: 16px;
+}
+main{
+    display: flex;
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+main aside{
+    width: 22%;
+    height: 97vh;
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+}
+main aside:last-of-type{
+    width: 33%;
+    height: 100%;
+    padding: 10px 0 30px 30px;
+}
+main section{
+    width: 50%;
+    border-left: 1px solid #2F3336;
+    border-right: 1px solid #2F3336;
+    padding-top: 10px;
+}
+main aside #icon iconify-icon{
+    font-size: 30px;
+    color: #f5f5f5;
+}
+main aside #icon{
+    cursor: pointer;
+    padding: 5px 5px 0 5px;
+    background-color: #000;
+    width: 40px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+main aside #icon:hover{
+    background-color: #031018;
+}
+main aside #side_nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 15px;
+}
+main aside #side_nav a{
+    height: 45px;
+    font-size: 22px;
+    display: flex;
+}
+main aside #side_nav a li{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+main aside #side_nav a:hover li{
+    background-color: #031018;
+}
+main aside #side_nav a li iconify-icon{
+    font-size: 28px;
+    font-weight: bold;
+}
+main aside #tweet_btn{
+    cursor:crosshair;
+    margin: 10px auto;
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #f5f5f5;
+    background-color: #1A8CD8;
+    border-radius: 50px;
+}
+main aside .profile{
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 12px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 50px;
+    padding: 10px 10px 10px ;
+}
+main aside .profile:hover{
+    background-color: #031018;
+}
+main aside .profile iconify-icon{
+    font-size: 25px;
+}
+main aside .profile img{
+    border-radius: 50%;
+    height: 40px;
+}
+main aside .profile .profile_text{
+    font-size: 12px;
+    margin-right: 35px;
+}
+
+
+main section header{
+    height: 23vh;
+    padding-left: 10px;
+}
+main section header .whatshappening{
+    margin-top: 20px;
+    display: flex;
+    align-items:flex-end;
+}
+main section header .whatshappening img{
+    height: 50px;
+    border-radius: 50%;
+}
+main section header .whatshappening input[type=text]{
+    background-color: transparent;
+    height: 40px;
+    width: 80%;
+    margin-left: 15px;
+    outline: none;
+    color: #f5f5f5;
+    font-size: 18px;
+}
+main section header .whatshappening input[type=text]::placeholder{
+    font-size: 20px;
+}
+main section header .icons{
+    position: relative;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+main section header .icons iconify-icon{
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color: #1A8CD8;
+    cursor: pointer;
+}
+main section header .icons iconify-icon:last-of-type{
+    color: #132f42;
+    cursor: auto;
+}
+main section header .icons iconify-icon:hover{
+    background-color: #031018;
+}
+main section header button{
+    font-size: 17px;
+    width: 90px;
+    height: 30px;
+    background-color: #0E4D78;
+    color: #737A7E;
+    border-radius: 50px;
+    position: absolute;
+    top: 128px;
+    right: 470px;
+}
+
+
+main section #posts .post{
+    cursor: pointer;
+    position: relative;
+    border-top: 1px solid #2F3336;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    line-height: 22px;
+}
+main section #posts .post:hover{
+    background-color: #080808;
+}
+main section #posts .post .user h3,
+main section #posts .post .user h4{
+    display: inline;
+}
+main section #posts .post .user:hover{
+    text-decoration: underline;
+}
+main section #posts .post .user h3,
+main section #posts .post .tweet{
+    margin-left: 55px;
+    font-size: 15px;
+}
+main section #posts .post .prof_pic{
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50%;
+}
+main section #posts .post .tweet img{
+    height: 48vh;
+    width: 95%;
+    border-radius: 15px;
+    border: 0.5px solid #5C6064;
+}
+main section #posts .post .tweeticons iconify-icon{
+    font-size: 20px;
+    color: #808488;
+    margin-right: 5px;
+}
+main section #posts .post .tweeticons{
+    margin: 10px;
+    margin-left: 50px;
+    width: 50%;
+    display: flex;
+    gap: 75px;
+}
+main section #posts .post .tweeticons .icon{
+    display: flex;
+    color: #5C6064;
+    cursor: pointer;
+}
+main section #posts .post .tweeticons .comment:hover,
+main section #posts .post .tweeticons .comment iconify-icon:hover{
+    color: #166AA2;
+}
+main section #posts .post .tweeticons .retweet:hover,
+main section #posts .post .tweeticons .retweet iconify-icon:hover{
+    color: #02885C;
+}
+main section #posts .post .tweeticons .likes:hover,
+main section #posts .post .tweeticons .likes iconify-icon:hover{
+    color: #EB1779;
+}
+main section #posts .post .tweeticons .share:hover,
+main section #posts .post .tweeticons .share iconify-icon:hover{
+    color: #1D9BF0;
+}
+
+
+main aside:last-of-type .srch input[type=search]{
+    font-size: 15px;
+    padding-left: 50px;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #202327;
+    color: #f5f5f5;
+}
+main aside:last-of-type .srch input[type=search]:focus{
+    outline: 1px solid #1D9BF0;
+}
+main aside:last-of-type .srch input[type=search]:focus  iconify-icon{
+    color: #1D9BF0;
+}
+main aside:last-of-type .srch{
+    position: relative;
+}
+main aside:last-of-type .srch iconify-icon{
+    font-size: 20px;
+    color: #5C6064;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+main aside:last-of-type .trends{
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding-top: 15px;
+    margin-top: 35px;
+    background-color: #16181C;
+}
+main aside:last-of-type .trends h2{
+    margin-left: 15px;
+    font-size: 22px;
+}
+main aside:last-of-type .trends .trend_list .item{
+    display: flex;
+    cursor: pointer;
+}
+main aside:last-of-type .trends .trend_list .item:hover{
+    background-color: #1D1F23;
+}
+main aside:last-of-type .trends .trend_list .item .item_text{
+    width: 90%;
+    height: 80px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main aside:last-of-type .trends .trend_list .item >iconify-icon{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5C6064;
+    margin-top: 15px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+}
+main aside:last-of-type .trends .trend_list .item >iconify-icon:hover{
+    color: #1E8DD8;
+    background-color: #1D2C37;
+}
+main aside:last-of-type .trends .trend_list .item h5{
+    color: #5C6064;
+}
+main aside:last-of-type .trends .trend_list .item >h3{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #1E8DD8;
+    font-weight: 100;
+}
