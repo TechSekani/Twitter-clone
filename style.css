@@ -350,7 +350,7 @@ aside{
 }
 main{
     position: relative;
-    width: 100%;
+    width: 97%;
 }
 main section{
     width: 100%;
@@ -380,8 +380,8 @@ main #mobile_nav{
     height: 50px;
     position: fixed;
     align-items: center;
-    gap: 50px;
-    padding-left: 20px;
+    gap: 40px;
+    padding-left: 25px;
     bottom: -2px;
     display: flex;
     z-index: 30;
@@ -391,5 +391,8 @@ main section #posts .post .tweet img{
 }
 main #mobile_nav iconify-icon{
     font-size: 30px;
+}
+main section #posts{
+ padding-bottom: 40px;
 }
 }
