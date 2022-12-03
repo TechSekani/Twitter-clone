@@ -375,7 +375,7 @@ main section header button{
 }
 main #mobile_nav{
     background-color: #080808;
-    outline: 1px solid red;
+    border-top: #2F3336;
     width: 100%;
     height: 50px;
     position: fixed;
