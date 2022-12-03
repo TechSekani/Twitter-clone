@@ -9,6 +9,7 @@
 body{
     background-color: #000;
     color: #f5f5f5;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -337,4 +338,58 @@ main aside:last-of-type .trends .trend_list .item >h3{
     font-size: 16px;
     color: #1E8DD8;
     font-weight: 100;
+}
+main #mobile_nav{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+body
+aside{
+    display: none;
+}
+main{
+    position: relative;
+    width: 100%;
+}
+main section{
+    width: 100%;
+    /* border: none; */
+}
+main section #posts .post .tweeticons{
+    width: 100%;
+    margin-left: 50px;
+    gap: 30px;
+}
+main section #posts .post .user{
+    width: 320px;
+    margin-left: 55px;
+}
+main section #posts .post .user h3{
+    margin-left: 0;
+
+}
+main section header button{
+    top: 20px;
+    right: 15px;
+}
+main #mobile_nav{
+    background-color: #080808;
+    outline: 1px solid red;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    align-items: center;
+    gap: 50px;
+    padding-left: 20px;
+    bottom: -2px;
+    display: flex;
+    z-index: 30;
+}
+main section #posts .post .tweet img{
+    height: 40vh;
+}
+main #mobile_nav iconify-icon{
+    font-size: 30px;
+}
 }
